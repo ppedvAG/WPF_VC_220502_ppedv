@@ -6,9 +6,14 @@
         xmlns:local="clr-namespace:Personendatenbank"
         mc:Ignorable="d"
         Title="Neue Person" 
-        Height="275" Width="285" ResizeMode="NoResize" 
+        Width="285" ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen" Topmost="True"
-        FontSize="14.0">
+        SizeToContent="Height"
+        FontSize="14.0"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        PreviewMouseDown="LogAction"
+        TextBoxBase.TextChanged="LogAction"
+        ButtonBase.Click="LogAction">
 
     <Window.Background>
         <LinearGradientBrush>

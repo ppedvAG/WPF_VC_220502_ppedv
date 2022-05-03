@@ -7,7 +7,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Container"
         mc:Ignorable="d"
-        Title="MainWindow" Height="418" Width="306">
+        Title="MainWindow" Height="618" Width="306">
 
     <!--Der ScrollViewer zweigt automatisch eine ScrollBar an, wenn der Content des ScrollViewers im Fenster nicht mehr vollständig
         sichtbar ist-->
@@ -114,6 +114,10 @@
                 zu den Zellen erfolgt durch die Reihenfolge der Elementdeklaration in Xaml. Eine Angabe von Spalten- und Zeilen-
                 größe ist nicht möglich.-->
                 <UniformGrid Columns="2" Rows="3">
+                    <Button Content="Button"/>
+                    <Button Content="Button"/>
+                    <Button Content="Button"/>
+                    <Button Content="Button"/>
                     <Button Content="Button"/>
                     <Button Content="Button"/>
                     <Button Content="Button"/>
