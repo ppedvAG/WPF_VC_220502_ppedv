@@ -5,9 +5,11 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M01_HelloWPF", "HelloWPF\M01_HelloWPF.csproj", "{9077C6F9-8A37-403B-B11D-02D5490000E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Controls", "Controls\M02_Controls.csproj", "{350A2011-A809-4D5C-8ABB-1734A3889F44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M02_Controls", "Controls\M02_Controls.csproj", "{350A2011-A809-4D5C-8ABB-1734A3889F44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{AB92994D-600D-4B44-ACD9-6DD2D46E03C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Personendatenbank", "Personendatenbank\Personendatenbank.csproj", "{AB92994D-600D-4B44-ACD9-6DD2D46E03C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Container", "Container\Container.csproj", "{5CFE5A6E-1306-4A64-BAD5-ADA8A21A6474}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{AB92994D-600D-4B44-ACD9-6DD2D46E03C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB92994D-600D-4B44-ACD9-6DD2D46E03C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB92994D-600D-4B44-ACD9-6DD2D46E03C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CFE5A6E-1306-4A64-BAD5-ADA8A21A6474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFE5A6E-1306-4A64-BAD5-ADA8A21A6474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CFE5A6E-1306-4A64-BAD5-ADA8A21A6474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CFE5A6E-1306-4A64-BAD5-ADA8A21A6474}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@
         Title="Neue Person" 
         SizeToContent="Height"
         Width="285" 
-        ResizeMode="NoResize" 
+        ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen" 
         Topmost="True"
         FontSize="14.0">
@@ -44,11 +44,11 @@
 
         <TextBlock Text="Geschlecht:"/>
         <RadioButton Content="M"
-                         GroupName="Rbg_Gender"/>
+                     GroupName="Rbg_Gender"/>
         <RadioButton Content="W"
-                         GroupName="Rbg_Gender"/>
+                     GroupName="Rbg_Gender"/>
         <RadioButton Content="D"
-                         GroupName="Rbg_Gender"/>
+                     GroupName="Rbg_Gender"/>
 
         <Button x:Name="Btn_Ok"
                     Content="OK"/>
