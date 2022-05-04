@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -27,8 +26,16 @@ namespace PropertyBinding
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BindingExpression be = Tbx_Drei.GetBindingExpression(TextBox.TextProperty);
+            //Für die explizite Aktualisierung muss eine BindingExpression im CodeBehind erstellt werden und über die Methode UpdateSource() angefordert werden
+            //Die BindingExpession wird per Übergabe der (statischen) DependencyProperty an die Methode GetBindingExpression() aus dem bindenen Objekt erhalten
+            BindingExpression be = Tbx_Vier.GetBindingExpression(TextBox.TextProperty);
             be.UpdateSource();
+        }
+
+        private void TextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+                Tbx_Zwei.Focus();
         }
     }
 }
