@@ -9,19 +9,11 @@
         Width="285" ResizeMode="NoResize" 
         WindowStartupLocation="CenterScreen" Topmost="True"
         SizeToContent="Height"
-        FontSize="14.0"
         PreviewKeyDown="Window_PreviewKeyDown"
         PreviewMouseDown="LogAction"
         TextBoxBase.TextChanged="LogAction"
         ButtonBase.Click="LogAction"
         Style="{StaticResource Sty_Wnd}">
-
-    <Window.Background>
-        <LinearGradientBrush>
-            <GradientStop Color="LightYellow" Offset="0"/>
-            <GradientStop Color="Orange" Offset="1"/>
-        </LinearGradientBrush>
-    </Window.Background>
 
     <Window.DataContext>
         <local:Person/>
@@ -56,6 +48,7 @@
         <TextBlock Text="Lieblingsfarbe:" 
                    Grid.Row="4"/>
         <TextBlock Text="Geschlecht:" 
+                   VerticalAlignment="Top"
                    Grid.Row="5"/>
 
         <TextBox x:Name="Tbx_Vorname"
@@ -76,8 +69,6 @@
 
         <ComboBox x:Name="Cbb_Lieblingsfarbe"
                   Grid.Column="1" Grid.Row="4"
-                  VerticalAlignment="Center"
-                  Margin="2"
                   SelectedValue="{Binding Lieblingsfarbe}">
             <ComboBoxItem Content="Grün" Foreground="Green"/>
             <ComboBoxItem Content="Blau" Foreground="Blue"/>
@@ -103,13 +94,9 @@
                    HorizontalAlignment="Right" Margin="0,5">
             <Button x:Name="Btn_Ok"
                     Content="OK"
-                    Width="100"
-                    Margin="5,0,0,0"
                     Click="Btn_Ok_Click"/>
             <Button x:Name="Btn_Abbruch"
                     Content="Abbrechen"
-                    Width="100"
-                    Margin="5,0,0,0"
                     Click="Btn_Abbruch_Click"/>
         </WrapPanel>
     </Grid>

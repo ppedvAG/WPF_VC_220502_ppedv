@@ -16,7 +16,7 @@
         <Setter Property="FontSize" Value="{StaticResource Dbl_Fontsize}"/>
     </Style>
 
-    <Style TargetType="FrameworkElement" x:Key="Sty_Base">
+    <Style TargetType="FrameworkElement"  x:Key="Sty_Base">
         <Setter Property="Margin" Value="2"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
