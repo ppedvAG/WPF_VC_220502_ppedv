@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M03_Container", "Container\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_EventRouting", "EventRouting\M04_EventRouting.csproj", "{0131A12D-79C2-4F3B-95BB-3E3E54768E3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_PropertyBinding", "PropertyBinding\M05_PropertyBinding.csproj", "{914D6D97-E938-46DE-9EAA-5FD96CF439D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M05_PropertyBinding", "PropertyBinding\M05_PropertyBinding.csproj", "{914D6D97-E938-46DE-9EAA-5FD96CF439D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{7F434658-3EE2-4971-A21C-F955CC1AAEAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{7F434658-3EE2-4971-A21C-F955CC1AAEAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06_DataBinding", "DataBinding\M06_DataBinding.csproj", "{76F10B1B-FE86-4F6A-B743-119D55BE01D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06_DataBinding", "DataBinding\M06_DataBinding.csproj", "{76F10B1B-FE86-4F6A-B743-119D55BE01D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources_Styles", "Resources_Styles\Resources_Styles.csproj", "{0DE692D1-FF69-4AB9-870C-58D116F0E673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{76F10B1B-FE86-4F6A-B743-119D55BE01D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76F10B1B-FE86-4F6A-B743-119D55BE01D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76F10B1B-FE86-4F6A-B743-119D55BE01D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE692D1-FF69-4AB9-870C-58D116F0E673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE692D1-FF69-4AB9-870C-58D116F0E673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE692D1-FF69-4AB9-870C-58D116F0E673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE692D1-FF69-4AB9-870C-58D116F0E673}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
