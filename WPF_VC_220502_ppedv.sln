@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorPicker", "ColorPicker\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06_DataBinding", "DataBinding\M06_DataBinding.csproj", "{76F10B1B-FE86-4F6A-B743-119D55BE01D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M07_Resources_Styles", "Resources_Styles\M07_Resources_Styles.csproj", "{0DE692D1-FF69-4AB9-870C-58D116F0E673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_Resources_Styles", "Resources_Styles\M07_Resources_Styles.csproj", "{0DE692D1-FF69-4AB9-870C-58D116F0E673}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M08_Templates", "Templates\M08_Templates.csproj", "{F6389D94-C466-4EA6-A468-AF8512E8D0E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M08_Templates", "Templates\M08_Templates.csproj", "{F6389D94-C466-4EA6-A468-AF8512E8D0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validation", "Validation\Validation.csproj", "{0048E48B-B92E-4E98-AE2F-4B6C168A9388}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{F6389D94-C466-4EA6-A468-AF8512E8D0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6389D94-C466-4EA6-A468-AF8512E8D0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6389D94-C466-4EA6-A468-AF8512E8D0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0048E48B-B92E-4E98-AE2F-4B6C168A9388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0048E48B-B92E-4E98-AE2F-4B6C168A9388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0048E48B-B92E-4E98-AE2F-4B6C168A9388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0048E48B-B92E-4E98-AE2F-4B6C168A9388}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
