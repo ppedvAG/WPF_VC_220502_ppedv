@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Templates"
         mc:Ignorable="d"
-        Title="MainWindow" Height="242" Width="225"
+        Title="MainWindow" Height="339" Width="225"
         Topmost="True">
     <Window.Resources>
         <Style TargetType="Button">
@@ -46,13 +46,12 @@
             <Setter Property="Background" Value="LightCyan"/>
         </Style>
 
+        <!--Globales DataTemplate für Personen-Objekte (vgl. Listbox.ItemTemplate s.u.)-->
         <DataTemplate DataType="{x:Type local:Person}">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Margin="2" Text="{Binding Vorname}"/>
                 <TextBlock Margin="2" Text="{Binding Nachname}"/>
                 <TextBlock Margin="2" Text="{Binding Alter, StringFormat='({0})'}"/>
-                <!--Property 'Tag' kann für jedes beliebige Objekt benutzt werden, z.B. für Zusatzinformation, Metadaten, Referenzen -->
-                <!--Kurzbindung 'Binding' ohne Propertyangabe bindet immer an das ganze Objekt (hier: die ganze Person)-->
                 <Button x:Name="Btn_Delete" Content="Löschen" Click="Btn_Delete_Click" Tag="{Binding}"/>
             </StackPanel>
         </DataTemplate>
@@ -85,9 +84,12 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Label Content="{Binding ElementName=Lbx_Person, Path=SelectedItem}"/>
-        <TextBlock Text="{Binding ElementName=Lbx_Person, Path=SelectedIndex}"/>
-        <TextBlock Text="{Binding ElementName=Lbx_Person, Path=SelectedValue}"/>
+        <!--SelectedIndex gibt die Indexposition des markierten Elements zurück-->
+        <TextBlock Text="{Binding SelectedIndex, ElementName=Lbx_Personen, StringFormat=SelectedIndex: {0:00.00}}"/>
+        <!--SelectedItem gib das Objekt hinter dem markierten Element zurück (Hier unter Verwendung des globalen DataTemplates)-->
+        <Label Content="{Binding ElementName=Lbx_Personen, Path=SelectedItem}"/>
+        <!--SelectedValue gibt die in der Property SelectedValuePath im ItemControl angegebene Property zurück-->
+        <TextBlock Text="{Binding ElementName=Lbx_Personen, Path=SelectedValue, StringFormat=SelectedValue: {0}}"/>
     </StackPanel>
 
 </Window>
