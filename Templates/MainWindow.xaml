@@ -45,6 +45,17 @@
             <!--Standart-Background (falls im Button selbst kein Background angegegeben ist)-->
             <Setter Property="Background" Value="LightCyan"/>
         </Style>
+
+        <DataTemplate DataType="{x:Type local:Person}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="2" Text="{Binding Vorname}"/>
+                <TextBlock Margin="2" Text="{Binding Nachname}"/>
+                <TextBlock Margin="2" Text="{Binding Alter, StringFormat='({0})'}"/>
+                <!--Property 'Tag' kann für jedes beliebige Objekt benutzt werden, z.B. für Zusatzinformation, Metadaten, Referenzen -->
+                <!--Kurzbindung 'Binding' ohne Propertyangabe bindet immer an das ganze Objekt (hier: die ganze Person)-->
+                <Button x:Name="Btn_Delete" Content="Löschen" Click="Btn_Delete_Click" Tag="{Binding}"/>
+            </StackPanel>
+        </DataTemplate>
     </Window.Resources>
 
     <StackPanel>
@@ -55,7 +66,8 @@
                 Height="100"/>
 
         <!--DataTemplate-Bsp-->
-        <ListBox Height="100" ItemsSource="{Binding Personenliste}">
+        <ListBox x:Name="Lbx_Person" Height="100" ItemsSource="{Binding Personenliste}"
+                 SelectedValuePath="Nachname">
             <ListBox.ItemTemplate>
                 <!--DataTemplates sind Vorlagen für das Layout von Items in ItemControls (z.B. ListView). Die Bindungen erfolgt an die
                     ItemSource des Zielelements per Kurzbindungen.
@@ -72,6 +84,10 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+
+        <Label Content="{Binding ElementName=Lbx_Person, Path=SelectedItem}"/>
+        <TextBlock Text="{Binding ElementName=Lbx_Person, Path=SelectedIndex}"/>
+        <TextBlock Text="{Binding ElementName=Lbx_Person, Path=SelectedValue}"/>
     </StackPanel>
 
 </Window>
