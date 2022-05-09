@@ -4,7 +4,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:usercontrols="clr-namespace:UserControls;assembly=UserControls"
+        xmlns:usercontrols="clr-namespace:UserControls;assembly=M11_UserControls"
         xmlns:local="clr-namespace:Trigger"
         mc:Ignorable="d"
         Title="MainWindow" Height="363" Width="267">
@@ -59,11 +59,14 @@
 
         <Button x:Name="Btn_Ändern" Click="Btn_Ändern_Click" Content="Ändern"/>
 
-        <usercontrols:ColorPicker x:Name="ColorPicker" Tap="ColorPicker_Tap">
-            <!--<usercontrols:ColorPicker.Content>
-                <Button Content="Hallo" usercontrols:ColorPicker.Count="5"/>
-            </usercontrols:ColorPicker.Content>-->
-        </usercontrols:ColorPicker>
+        <Separator Margin="5"/>
 
+        <!--Beispiel-Einbindung des UserControls aus M11_UserControls-->
+        <usercontrols:ColorPicker x:Name="ColorPicker" Tap="ColorPicker_Tap" PickedColorChanged="ColorPicker_PickedColorChanged">
+            Mein Content
+        </usercontrols:ColorPicker>
+        <!--Bsp-Verwendung einer AttachedProperty aus der ColorPicker-Klasse-->
+        <Button Content="Hallo" usercontrols:ColorPicker.Count="3" Click="Button_Click"/>
+    
     </StackPanel>
 </Window>

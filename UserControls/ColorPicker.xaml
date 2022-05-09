@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              x:Name="Uc_Main">
+
+    <!--UserControls werden verwendet um eigene Control-Elemente zu erstellen und zu versiegeln, so dass der Benutzer die Properties
+    der Teilelemente nicht mehr direkt verwendet kann. Vgl. CodeBehind-->
     
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
@@ -21,59 +24,62 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="R:" Foreground="Red"/>
-        <Slider Grid.Column="1" 
+        <Label x:Name="Lbl_MyContent" Content="{Binding ElementName=Uc_Main, Path=MyContent}" Grid.ColumnSpan="3" HorizontalAlignment="Center"/>
+
+        <TextBlock Text="R:" Foreground="Red" Grid.Row="1"/>
+        <Slider Grid.Column="1"  Grid.Row="1"
                     Minimum="0" Maximum="255" Margin="5,0"
                     x:Name="Sdr_Red"
                     Value="255"
                     IsSnapToTickEnabled="True"/>
-        <TextBox Grid.Column="2" Width="40" 
+        <TextBox Grid.Column="2" Width="40" Grid.Row="1"
                      Text="{Binding ElementName=Sdr_Red, Path=Value, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <TextBlock Grid.Row="1"
+        <TextBlock Grid.Row="2"
                        Text="G:" Foreground="Green"/>
-        <Slider Grid.Row="1" Grid.Column="1" 
+        <Slider Grid.Row="2" Grid.Column="1" 
                     Minimum="0" Maximum="255" Margin="5,0"
                     x:Name="Sdr_Green"
                     Value="255"
                     IsSnapToTickEnabled="True"/>
-        <TextBox Grid.Column="2" Grid.Row="1" Width="40" 
+        <TextBox Grid.Column="2" Grid.Row="2" Width="40" 
                      Text="{Binding ElementName=Sdr_Green, Path=Value, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <TextBlock Grid.Row="2"
+        <TextBlock Grid.Row="3"
                        Text="B:" Foreground="Blue"/>
-        <Slider Grid.Row="2" Grid.Column="1" 
+        <Slider Grid.Row="3" Grid.Column="1" 
                     Minimum="0" Maximum="255" Margin="5,0"
                     x:Name="Sdr_Blue"
                     Value="255"
                     IsSnapToTickEnabled="True"/>
-        <TextBox Grid.Column="2" Grid.Row="2" Width="40" 
+        <TextBox Grid.Column="2" Grid.Row="3" Width="40" 
                      Text="{Binding ElementName=Sdr_Blue, Path=Value, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <TextBlock Grid.Row="3"
+        <TextBlock Grid.Row="4"
                        Text="A:"/>
-        <Slider Grid.Row="3" Grid.Column="1" 
+        <Slider Grid.Row="4" Grid.Column="1" 
                 Minimum="0" Maximum="255" Margin="5,0"
                 x:Name="Sdr_Alpha"
                 Value="255"
                 IsSnapToTickEnabled="True"/>
-        <TextBox Grid.Column="2" Grid.Row="3" Width="40" 
+        <TextBox Grid.Column="2" Grid.Row="4" Width="40" 
                  Text="{Binding ElementName=Sdr_Alpha, Path=Value, UpdateSourceTrigger=PropertyChanged}"/>
 
 
         <TextBlock Text="{Binding ElementName=Rct_Output_2, Path=Fill, StringFormat='Picked color: {0}', UpdateSourceTrigger=PropertyChanged}"
                    HorizontalAlignment="Center" 
                    Margin="5"
-                   Grid.Row="4" Grid.ColumnSpan="3"
+                   Grid.Row="5" Grid.ColumnSpan="3"
                    x:Name="Tbl_Output"/>
 
         <!--<ContentPresenter Grid.Row="4" Grid.ColumnSpan="3" Content="{Binding ElementName=Uc_Main, Path=Content}"/>-->
 
         <Border BorderBrush="Black" BorderThickness="1" 
                 Width="100" Height="100"
-                Grid.Row="5" Grid.ColumnSpan="3">
+                Grid.Row="6" Grid.ColumnSpan="3">
             <Rectangle x:Name="Rct_Output_2" Width="100" Height="100">
                 <Rectangle.Fill>
                     <MultiBinding>
@@ -92,3 +98,5 @@
         </Border>
     </Grid>
 </UserControl>
+
+<!--Beispiel-Einbindung in M10_Trigger-->
