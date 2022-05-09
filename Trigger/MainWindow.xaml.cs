@@ -49,5 +49,10 @@ namespace Trigger
         {
             BoolVal = !BoolVal;
         }
+
+        private void ColorPicker_Tap(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(ColorPicker.PickedColor.ToString());
+        }
     }
 }
