@@ -72,12 +72,22 @@ namespace Personendatenbank
             }
         }
 
-
         public Person()
         {
             this.vorname = String.Empty;
             this.nachname = String.Empty;
             this.Geburtsdatum = DateTime.Now;
+        }
+        public Person(Person altePerson)
+        {
+            this.vorname = altePerson.Vorname;
+            this.nachname = altePerson.Nachname;
+            this.geschlecht = altePerson.Geschlecht;
+            this.verheiratet = altePerson.Verheiratet;
+            this.lieblingsfarbe = altePerson.Lieblingsfarbe;
+            this.kinder = altePerson.Kinder;
+
+            this.geburtsdatum = new DateTime(altePerson.Geburtsdatum.Year, altePerson.Geburtsdatum.Month, altePerson.Geburtsdatum.Day);
         }
     }
 }
