@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Commands"
+        xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow" Height="273" Width="423"
         x:Name="Wnd_Main">
@@ -27,6 +28,12 @@
                     <MenuItem Command="{x:Static local:MainWindow.MyCmd}"/>
                 </ContextMenu>
             </TextBox.ContextMenu>
+
+            <b:Interaction.Triggers>
+                <b:EventTrigger EventName="MouseDoubleClick">
+                    <b:InvokeCommandAction Command="{Binding CloseCmd}" CommandParameter="{Binding ElementName=Wnd_Main}"/>
+                </b:EventTrigger>
+            </b:Interaction.Triggers>
         </TextBox>
 
         <Button Content="Schließen" x:Name="Btn_Close" 
