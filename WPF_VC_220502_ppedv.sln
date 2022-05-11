@@ -29,9 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M10_Trigger", "Trigger\M10_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M11_UserControls", "UserControls\M11_UserControls.csproj", "{F5DDC1E9-5120-44F9-BBF5-A4329C2E1C07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M12_RelativeSources", "RelativeSources\M12_RelativeSources.csproj", "{9EB2F620-C5A3-4123-9130-1BC2DA8F8B36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M12_RelativeSources", "RelativeSources\M12_RelativeSources.csproj", "{9EB2F620-C5A3-4123-9130-1BC2DA8F8B36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M15_Localisation", "Localisation\M15_Localisation.csproj", "{635B5949-81A4-45E5-89EF-A7A4692C908E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M15_Localisation", "Localisation\M15_Localisation.csproj", "{635B5949-81A4-45E5-89EF-A7A4692C908E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands", "Commands\Commands.csproj", "{E1F690AF-5FD2-44AE-AA77-DFDA97CDE0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "MVVM\MVVM.csproj", "{3B4A329D-8975-488A-AC31-69231FDF2867}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +103,14 @@ Global
 		{635B5949-81A4-45E5-89EF-A7A4692C908E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{635B5949-81A4-45E5-89EF-A7A4692C908E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{635B5949-81A4-45E5-89EF-A7A4692C908E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F690AF-5FD2-44AE-AA77-DFDA97CDE0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F690AF-5FD2-44AE-AA77-DFDA97CDE0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F690AF-5FD2-44AE-AA77-DFDA97CDE0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F690AF-5FD2-44AE-AA77-DFDA97CDE0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4A329D-8975-488A-AC31-69231FDF2867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4A329D-8975-488A-AC31-69231FDF2867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4A329D-8975-488A-AC31-69231FDF2867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4A329D-8975-488A-AC31-69231FDF2867}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
